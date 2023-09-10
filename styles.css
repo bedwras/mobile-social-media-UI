@@ -198,6 +198,34 @@ div {
     position: sticky;
 }
 
+.search-posts { /*This is the div that contains .searchfield */
+    border: 2px solid rgb(68, 68, 68);
+    max-width: 100%;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(22, 21, 21);
+    position: relative;
+}
+
+.searchfield {
+    background-color: rgb(22, 21, 21);
+    height: auto;
+    resize: none;
+    border: 1px solid rgb(22, 21, 21);
+    color:  white;
+    text-align: left;
+    margin: auto;
+    max-width: 100%;
+    width: auto;
+    padding: 20px;
+    outline: none;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+    position: sticky;
+    font-size: 20px;
+}
+
 /*-------------------*\
 
         BUTTONS
@@ -218,6 +246,32 @@ div {
     margin: 26px;
     text-decoration: none;
     user-select: none;
+}
+
+  .searchbtn {
+    border-radius: 20px;
+    background-color: rgb(51, 51, 51);
+    border: 1px rgb(71, 71, 71);
+    width: 70px;
+    margin-right: auto;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 26px;
+    text-decoration: none;
+    user-select: none;
+}
+
+searchbtn:hover {
+    cursor: pointer;
+    background-color: rgb(92, 92, 92);
+    box-shadow: 0px 2px 6px -3px rgb(92, 92, 92);
+}
+
+.searchbtn:active {
+    background-color: rgb(133, 133, 133);
 }
 
 .postbtn:hover {
@@ -423,4 +477,64 @@ color: rgb(198, 198, 198);
       100% {
         transform: scale(200%);
       }
+}
+
+/*-------------------*\
+
+        TREND CARDS
+
+\*-------------------*/
+
+.trend-card {
+    position: relative;
+    border-bottom: 2px solid rgb(68, 68, 68);
+    border-right: 2px solid rgb(68, 68, 68);
+    border-left: 2px solid rgb(68, 68, 68);
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.trend-card:hover {
+    background-color: rgb(13, 13, 13);
+    transition-duration: 320ms;
+    cursor: pointer;
+}
+
+
+.trend-card:active {
+    background-color: rgb(37, 37, 37);
+    transition-duration: 320ms;
+}
+
+.trend-position {
+  text-align: left;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #999999;
+  
+}
+
+.trend-hashtag {
+    color: rgb(214, 214, 214);
+  text-align: center;
+}
+
+.trend-hashtag:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition-duration: 300ms;
+    color: rgba(98, 98, 98, 0.373);
+}
+
+.trend-hashtag:active {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
