@@ -11,10 +11,10 @@
 h1, h2, h3, h4, h5, h6, p, code, hr {
     color: white;
     margin: 10px;
-}
+} 
 
-.left-bold {
-    text-align: left;
+.title-card-text {
+    text-align: center;
     font-weight: 800;
 }
 
@@ -96,7 +96,7 @@ div {
 .nav-bottom {
     position: fixed;
     max-width: 100%;
-    width: 800px;
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -209,10 +209,12 @@ div {
 }
 
 .searchfield {
-    background-color: rgb(22, 21, 21);
+      background-color: rgba(0, 0, 0, 0.532);
+  border: none;
+    top: 0px;
+    filter: blur(90%);
     height: auto;
     resize: none;
-    border: 1px solid rgb(22, 21, 21);
     color:  white;
     text-align: left;
     margin: auto;
@@ -224,6 +226,7 @@ div {
     /*overflow: hidden;*/
     position: sticky;
     font-size: 20px;
+    z-index: 1000;
 }
 
 /*-------------------*\
@@ -262,6 +265,7 @@ div {
     margin: 26px;
     text-decoration: none;
     user-select: none;
+    z-index: 1000;
 }
 
 searchbtn:hover {
@@ -524,7 +528,8 @@ color: rgb(198, 198, 198);
 
 .trend-hashtag {
     color: rgb(214, 214, 214);
-  text-align: center;
+    text-align: center;
+    
 }
 
 .trend-hashtag:hover {
@@ -537,4 +542,44 @@ color: rgb(198, 198, 198);
 .trend-hashtag:active {
     color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+
+/*-------------------*\
+
+   NOTIFICATIONS MENU
+
+\*-------------------*/
+
+
+.notification-card {
+    position: relative;
+    border-bottom: 2px solid rgb(68, 68, 68);
+    border-right: 2px solid rgb(68, 68, 68);
+    border-left: 2px solid rgb(68, 68, 68);
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.notification-card:hover {
+    background-color: rgb(13, 13, 13);
+    transition-duration: 320ms;
+    cursor: pointer;
+}
+
+
+.notification-card:active {
+    background-color: rgb(37, 37, 37);
+    transition-duration: 320ms;
+}
+
+.notification-text {
+    font-weight: 100;
+    font-size: 14px;
 }
