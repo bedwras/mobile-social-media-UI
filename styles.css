@@ -119,6 +119,7 @@ div {
     background-color: rgba(0, 0, 0, 0.532);
     bottom: 0px;
     filter: blur(90%);
+    width: 100%;
 }
 
 .icon-btn {
@@ -344,6 +345,16 @@ searchbtn:hover {
 .pfp:active {
     filter: brightness(70%);
 }
+
+.notif-pfp {
+    border-radius: 50%;
+    border: white 1px solid;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 10px;
+}
+
 
 .text {
     font-weight: 100;
@@ -582,4 +593,5 @@ color: rgb(198, 198, 198);
 .notification-text {
     font-weight: 100;
     font-size: 14px;
+    
 }
