@@ -132,9 +132,9 @@ div {
   z-index: 999;
 }
 
-.icon-btn:active {
+/*.icon-btn:active {
   background-color: rgba(54, 54, 54, 0.8);
-}
+}*/
 
 .logo {
     width: 25px;
@@ -481,6 +481,19 @@ color: rgb(198, 198, 198);
     'GRAD' 0,
     'opsz' 48
   }
+
+/*
+  .buttonicon {
+    
+  }*/
+
+  .buttonicon:active {
+    z-index: 1000;
+    border-radius: 25px;
+    background-color: rgba(245, 245, 245, 0.1);
+    transform: scale(1.5);
+    transition-duration: 150ms;
+}
 
 /*-------------------*\
 
