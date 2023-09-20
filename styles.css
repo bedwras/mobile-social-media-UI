@@ -238,7 +238,8 @@ div {
 
 .postbtn {
     border-radius: 20px;
-    background-color: rgb(11, 146, 237);
+    background: rgb(66,152,237);
+background: linear-gradient(180deg, rgba(66,152,237,1) 0%, rgba(69,94,238,1) 100%);
     border: 1px rgb(11, 146, 237);
     width: 70px;
     margin-right: auto;
