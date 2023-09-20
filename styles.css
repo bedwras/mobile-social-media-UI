@@ -332,8 +332,8 @@ searchbtn:hover {
 .pfp {
     border-radius: 50%;
     border: white 1px solid;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     margin: 10px;
 }
@@ -359,11 +359,11 @@ searchbtn:hover {
 
 .text {
     font-weight: 100;
-    font-size: 14px;
+    font-size: 16px;
 }
 
-.content {
-}
+/*.content {
+}*/
 
 .user1 {
     display: flex;
@@ -398,8 +398,7 @@ searchbtn:hover {
 }
 
 .hashtag:active {
-    color: rgb(0, 101, 168);
-    cursor: pointer;
+    color: rgb(0, 101, 168)
 }
 
 .gray {
