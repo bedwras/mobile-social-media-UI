@@ -147,9 +147,9 @@ div {
 
 .post {
     position: relative;
-    border-bottom: 2px solid rgb(68, 68, 68);
-    border-right: 2px solid rgb(68, 68, 68);
-    border-left: 2px solid rgb(68, 68, 68);
+    border-bottom: 1px solid rgb(68, 68, 68);
+    border-right: 1px solid rgb(68, 68, 68);
+    border-left: 1px solid rgb(68, 68, 68);
     max-width: 100%;
     width: 800px;
     height: auto;
@@ -171,7 +171,7 @@ div {
 }
 
 .write-post { /*This is the div that contains .write */
-    border: 2px solid rgb(68, 68, 68);
+    border: 1px solid rgb(68, 68, 68);
     max-width: 100%;
     width: 800px;
     height: 100px;
@@ -200,7 +200,7 @@ div {
 }
 
 .search-posts { /*This is the div that contains .searchfield */
-    border: 2px solid rgb(68, 68, 68);
+    border: 1px solid rgb(68, 68, 68);
     max-width: 100%;
     width: 800px;
     margin-left: auto;
@@ -515,9 +515,9 @@ color: rgb(198, 198, 198);
 
 .trend-card {
     position: relative;
-    border-bottom: 2px solid rgb(68, 68, 68);
-    border-right: 2px solid rgb(68, 68, 68);
-    border-left: 2px solid rgb(68, 68, 68);
+    border-bottom: 1px solid rgb(68, 68, 68);
+    border-right: 1px solid rgb(68, 68, 68);
+    border-left: 1px solid rgb(68, 68, 68);
     max-width: 100%;
     width: 800px;
     height: auto;
@@ -552,7 +552,7 @@ color: rgb(198, 198, 198);
 
 .trend-hashtag {
     color: rgb(214, 214, 214);
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -578,9 +578,9 @@ color: rgb(198, 198, 198);
 
 .notification-card {
     position: relative;
-    border-bottom: 2px solid rgb(68, 68, 68);
-    border-right: 2px solid rgb(68, 68, 68);
-    border-left: 2px solid rgb(68, 68, 68);
+    border-bottom: 1px solid rgb(68, 68, 68);
+    border-right: 1px solid rgb(68, 68, 68);
+    border-left: 1px solid rgb(68, 68, 68);
     max-width: 100%;
     width: auto;
     height: auto;
