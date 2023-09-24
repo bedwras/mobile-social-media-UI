@@ -289,8 +289,6 @@ searchbtn:hover {
 
 .postbtn:active {
     background-color: rgb(1, 121, 201);
-  transform: scale(95%);
-  transition-duration: 120ms;
 }
 
 .home {
