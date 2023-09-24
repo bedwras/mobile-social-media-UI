@@ -255,7 +255,8 @@ background: linear-gradient(180deg, rgba(66,152,237,1) 0%, rgba(69,94,238,1) 100
 
   .searchbtn {
     border-radius: 20px;
-    background-color: rgb(51, 51, 51);
+    background: rgb(37,37,37);
+  background: radial-gradient(circle,   rgba(37,37,37,1) 0%,  rgba(46,46,46,1) 100%);
     border: 1px rgb(71, 71, 71);
     width: 70px;
     margin-right: auto;
@@ -288,6 +289,8 @@ searchbtn:hover {
 
 .postbtn:active {
     background-color: rgb(1, 121, 201);
+  transform: scale(95%);
+  transition-duration: 120ms;
 }
 
 .home {
