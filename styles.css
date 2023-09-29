@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p, code, hr {
 } 
 
 .title-card-text {
-    text-align: center;
+    font-size: 24px;
     font-weight: 800;
 }
 
@@ -81,7 +81,19 @@ div {
 }
 
 .container-wrapper {
-    position: sticky;
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.532);
+    top: 0px;
+    filter: blur(90%);
+}
+
+.trend-container-wrapper {
+   position: sticky;
     max-width: 100%;
     width: 800px;
     height: auto;
@@ -101,9 +113,8 @@ div {
     margin-left: auto;
     margin-right: auto;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.532);
+    background-color: black; /*rgba(0, 0, 0, 0.532);*/
     bottom: 0px;
-    backdrop-filter: blur(5px);
   overflow: hidden;
   display: inline-block;
   white-space: nowrap;
@@ -116,7 +127,7 @@ div {
     margin-left: auto;
     margin-right: auto;
     z-index: 1001;
-    background-color: rgba(0, 0, 0, 0.532);
+    background-color: black;
     bottom: 0px;
     filter: blur(90%);
     width: 100%;
@@ -137,12 +148,12 @@ div {
 }*/
 
 .logo {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
+    padding: 12px;
 }
 
 .post {
@@ -238,9 +249,8 @@ div {
 
 .postbtn {
     border-radius: 20px;
-    background: rgb(66,152,237);
-background: linear-gradient(180deg, rgba(66,152,237,1) 0%, rgba(69,94,238,1) 100%);
-    border: 1px rgb(11, 146, 237);
+    background-color: #d6d6d6;
+    border: 1px rgb(214, 214, 214);
     width: 70px;
     margin-right: auto;
     font-weight: 700;
@@ -253,11 +263,20 @@ background: linear-gradient(180deg, rgba(66,152,237,1) 0%, rgba(69,94,238,1) 100
     user-select: none;
 }
 
-  .searchbtn {
+.postbtn:hover {
+    cursor: pointer;
+    background-color: rgb(194, 194, 194);
+    box-shadow: 0px 2px 6px -3px rgb(255, 255, 255);
+}
+
+.postbtn:active {
+    background-color: rgb(112, 112, 112);
+}
+
+.searchbtn {
     border-radius: 20px;
-    background: rgb(37,37,37);
-  background: radial-gradient(circle,   rgba(37,37,37,1) 0%,  rgba(46,46,46,1) 100%);
-    border: 1px rgb(71, 71, 71);
+    background-color: #232323;
+    border: 1px solid #232323;
     width: 70px;
     margin-right: auto;
     font-weight: 700;
@@ -273,22 +292,10 @@ background: linear-gradient(180deg, rgba(66,152,237,1) 0%, rgba(69,94,238,1) 100
 
 searchbtn:hover {
     cursor: pointer;
-    background-color: rgb(92, 92, 92);
-    box-shadow: 0px 2px 6px -3px rgb(92, 92, 92);
+    background-color: rgb(51, 51, 51);
 }
-
 .searchbtn:active {
-    background-color: rgb(133, 133, 133);
-}
-
-.postbtn:hover {
-    cursor: pointer;
-    background-color: rgb(0, 139, 231);
-    box-shadow: 0px 2px 6px -3px rgb(11, 146, 237);
-}
-
-.postbtn:active {
-    background-color: rgb(1, 121, 201);
+    background-color: rgb(71, 71, 71);
 }
 
 .home {
@@ -299,7 +306,9 @@ searchbtn:hover {
     text-align: center;
 }
 
-
+.btn-text {
+  color: black;
+}
 /*-------------------*\
 
         POSTS
@@ -473,7 +482,7 @@ color: rgb(198, 198, 198);
 }
 
 .material-symbols-outlined {
-    color: white;
+    color: #707070;
     padding: .2em;
     vertical-align: middle;
     font-variation-settings:
@@ -507,6 +516,36 @@ color: rgb(198, 198, 198);
         transform: scale(200%);
       }
 }
+
+/* class for animation */
+.logo-refresh-rotate {
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+  animation-duration: 0.8s;
+}
+
+/* rotate animation on refresh */
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 
 /*-------------------*\
 
