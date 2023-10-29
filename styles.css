@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5, h6, p, code {
     margin: 10px;
 } 
 
+.msgpreview {
+  color: #d6d6d6;
+  font-weight: 100;
+}
+
 code {
   font-family: monospace;
 }
@@ -134,6 +139,7 @@ body {
     bottom: 0px;
     filter: blur(90%);
     width: 100%;
+   
 }
 
 .icon-btn {
@@ -179,7 +185,7 @@ body {
 }
 
 
-.post:active {
+.post:active, .notification-card:active, .message-preview-card:active, .trend-card:active {
     background-color: rgb(37, 37, 37);
     transition-duration: 320ms;
 }
@@ -252,8 +258,8 @@ body {
 
 .postbtn {
     border-radius: 20px;
-    background-color: #d6d6d6;
-    border: 1px rgb(214, 214, 214);
+    background-color: #005bfe;
+    border: 1px rgb(0, 97, 254);
     width: 70px;
     margin-right: auto;
     font-weight: 700;
@@ -268,12 +274,12 @@ body {
 
 .postbtn:hover {
     cursor: pointer;
-    background-color: rgb(194, 194, 194);
-    box-shadow: 0px 2px 6px -3px rgb(255, 255, 255);
+    background-color: rgb(0, 86, 214);
+    box-shadow: 0px 2px 6px -3px rgb(0, 97, 254);
 }
 
 .postbtn:active {
-    background-color: rgb(112, 112, 112);
+    background-color: rgb(1, 47, 123);
 }
 
 .searchbtn {
@@ -310,7 +316,7 @@ searchbtn:hover {
 }
 
 .btn-text {
-  color: black;
+  color: white;
 }
 /*-------------------*\
 
@@ -571,18 +577,6 @@ color: rgb(198, 198, 198);
     padding-bottom: 20px;
 }
 
-.trend-card:hover {
-    background-color: rgb(13, 13, 13);
-    transition-duration: 320ms;
-    cursor: pointer;
-}
-
-
-.trend-card:active {
-    background-color: rgb(37, 37, 37);
-    transition-duration: 320ms;
-}
-
 .trend-position {
   text-align: left;
   top: 0;
@@ -650,4 +644,40 @@ color: rgb(198, 198, 198);
     font-weight: 100;
     font-size: 14px;
     
+}
+
+
+/*-------------------*\
+
+   MESSAGE PREVIEWS
+
+\*-------------------*/
+
+.message-preview-card {
+    position: relative;
+    border-bottom: 1px solid rgb(68, 68, 68);
+    border-right: 1px solid rgb(68, 68, 68);
+    border-left: 1px solid rgb(68, 68, 68);
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.about-sender {
+  display: flex;
+}
+
+.message-pfp {
+    border-radius: 50%;
+    border: white 1px solid;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
 }
