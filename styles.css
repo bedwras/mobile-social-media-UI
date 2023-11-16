@@ -468,7 +468,7 @@ color: rgb(198, 198, 198);
     text-align: center;
     user-select: none;
     padding: 5px;
-
+    color: white
 }
 
 .likeicon:hover {
@@ -491,7 +491,7 @@ color: rgb(198, 198, 198);
 }
 
 .material-symbols-outlined {
-    color: #707070;
+    color: #ffffff;
     padding: .2em;
     vertical-align: middle;
     font-variation-settings:
