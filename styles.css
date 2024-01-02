@@ -593,14 +593,14 @@ color: rgb(198, 198, 198);
     
 }
 
-.trend-hashtag:hover {
+.trend-card:hover {
     text-decoration: underline;
     cursor: pointer;
     transition-duration: 300ms;
     color: rgba(98, 98, 98, 0.373);
 }
 
-.trend-hashtag:active {
+.trend-card:active {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
