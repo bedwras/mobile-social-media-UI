@@ -59,6 +59,7 @@ img.emoji {
     background-color: rgba(98, 98, 98, 0.734);
     transition-duration: 0.2s;
     border-radius: 2px;
+    opacity: 0.2;
 }
 
 .link:visited {
@@ -188,6 +189,7 @@ body {
 .post:active, .notification-card:active, .message-preview-card:active, .trend-card:active {
     background-color: rgb(37, 37, 37);
     transition-duration: 320ms;
+    opacity: 0.7;
 }
 
 .write-post { /*This is the div that contains .write */
@@ -227,6 +229,10 @@ body {
     margin-right: auto;
     background-color: rgb(22, 21, 21);
     position: relative;
+}
+
+.search-posts:active {
+  opacity: 0.2;
 }
 
 .searchfield {
@@ -280,6 +286,8 @@ body {
 
 .postbtn:active {
     background-color: rgb(1, 47, 123);
+  opacity: 0.2;
+  
 }
 
 .searchbtn {
@@ -305,6 +313,8 @@ searchbtn:hover {
 }
 .searchbtn:active {
     background-color: rgb(71, 71, 71);
+    opacity: 0.2;
+
 }
 
 .home {
@@ -318,6 +328,8 @@ searchbtn:hover {
 .btn-text {
   color: white;
 }
+
+
 /*-------------------*\
 
         POSTS
@@ -418,6 +430,7 @@ searchbtn:hover {
 
 .hashtag:active {
     color: rgb(0, 101, 168)
+    opacity: 0.2;
 }
 
 .gray {
@@ -593,14 +606,14 @@ color: rgb(198, 198, 198);
     
 }
 
-.trend-card:hover {
+.trend-hashtag:hover {
     text-decoration: underline;
     cursor: pointer;
     transition-duration: 300ms;
     color: rgba(98, 98, 98, 0.373);
 }
 
-.trend-card:active {
+.trend-hashtag:active {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
